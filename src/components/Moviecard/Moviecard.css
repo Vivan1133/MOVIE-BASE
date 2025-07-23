@@ -2,23 +2,41 @@
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    padding: 20px 0;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 12px;
     align-items: center;
     background-color: var(--card-background);
-    max-width: 30%;
+    max-width: 300px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 1rem;
     color: var(--font-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.movie-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.movie-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .movie-title {
     margin-top: 1rem;
-    font-size: x-large;
-    letter-spacing: 5px;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
-.movie-year, .movie-type {
-    margin-top: 0.75rem;
-    font-size: large;
+.movie-year,
+.movie-type {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.9;
 }
